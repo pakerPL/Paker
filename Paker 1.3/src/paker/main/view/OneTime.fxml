@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="499.0" minWidth="800.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paker.main.view.OneTimeController">
+   <children>
+      <Pane prefHeight="499.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="nameClientLabel" layoutX="209.0" layoutY="42.0" text="Podaj nazwisko klienta:" />
+            <TextField fx:id="nameClient" layoutX="367.0" layoutY="38.0" prefHeight="25.0" prefWidth="208.0" />
+            <Label fx:id="choiseClientLabel" layoutX="209.0" layoutY="86.0" text="Wybierz klienta" />
+            <ComboBox fx:id="choiseClient" layoutX="366.0" layoutY="82.0" prefHeight="25.0" prefWidth="208.0" promptText="Bez danych lub wpisz nazwisko" />
+            <Button fx:id="newClient" layoutX="206.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Nowy klient" />
+            <Button fx:id="editClient" layoutX="337.0" layoutY="129.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Edytuj klienta" />
+            <Button fx:id="showClient" layoutX="478.0" layoutY="129.0" mnemonicParsing="false" text="Szczegóły klienta" />
+            <Label fx:id="keyNumberLabel" layoutX="209.0" layoutY="189.0" text="Podaj numerek kluczyka" />
+            <TextField fx:id="keyNumber" layoutX="209.0" layoutY="206.0" prefHeight="25.0" prefWidth="72.0" />
+            <CheckBox fx:id="outsidePass" layoutX="203.0" layoutY="348.0" mnemonicParsing="false" text="Wejście z karnetu zewnętrznego" />
+            <RadioButton fx:id="cloakroomWomen" layoutX="209.0" layoutY="241.0" mnemonicParsing="false" text="Szatnia damska" />
+            <RadioButton fx:id="cloakroomMen" layoutX="209.0" layoutY="258.0" mnemonicParsing="false" text="Szatnia męska" />
+            <ComboBox fx:id="enterIn" layoutX="395.0" layoutY="304.0" prefWidth="150.0" />
+            <Label fx:id="enterInLabel" layoutX="200.0" layoutY="308.0" text="Wybierz rodzaj wejścia" />
+            <Button fx:id="enter" layoutX="202.0" layoutY="381.0" mnemonicParsing="false" text="Zatwierdź wejście" />
+            <Button fx:id="exit" layoutX="531.0" layoutY="381.0" mnemonicParsing="false" onAction="#hangedExit" text="Wstecz" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

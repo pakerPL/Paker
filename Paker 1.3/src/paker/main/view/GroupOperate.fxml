@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="499.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paker.main.view.GroupOperateController">
+   <children>
+      <Pane prefHeight="499.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="exit" layoutX="734.0" layoutY="460.0" mnemonicParsing="false" onAction="#hangedExit" text="Wyjście" />
+            <Button layoutX="157.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Zmień grupę klienta" />
+            <Button fx:id="deleteClient" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" text="Usuń klienta z grupy" />
+            <Button fx:id="delete" layoutX="391.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Usuń z list" />
+            <Button fx:id="create" layoutX="287.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Twórz nową" />
+            <Button fx:id="submit" layoutX="183.0" layoutY="65.0" mnemonicParsing="false" text="Zatwierdź wybór" />
+            <ComboBox fx:id="changeGroup" layoutX="26.0" layoutY="65.0" prefWidth="150.0" promptText="Pusto" />
+            <Label fx:id="choiseGroupLabel" layoutX="26.0" layoutY="48.0" text="Wybierz grupę" />
+            <Button fx:id="showClient" layoutX="298.0" layoutY="213.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="Podgląd klienta" />
+            <ScrollPane layoutX="14.0" layoutY="250.0" prefHeight="200.0" prefWidth="780.0">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <TableView prefHeight="198.0" prefWidth="778.0">
+                          <columns>
+                            <TableColumn prefWidth="130.0" text="ID klienta" />
+                            <TableColumn prefWidth="130.0" text="Imię" />
+                              <TableColumn prefWidth="130.0" text="Nazwisko" />
+                              <TableColumn prefWidth="130.0" text="Numer telefonu" />
+                              <TableColumn prefWidth="130.0" text="Adres" />
+                              <TableColumn prefWidth="130.0" text="Nazwa grupy" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Button layoutX="183.0" layoutY="127.0" mnemonicParsing="false" text="Dodaj typ karnetu" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

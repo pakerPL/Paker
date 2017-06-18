@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import component.view.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paker.main.view.dialogs.ExtendValidityController">
+   <children>
+      <Pane prefHeight="224.0" prefWidth="348.0">
+         <children>
+            <CheckBox fx:id="checkValidity" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Przedłuż ważność karnetu" />
+            <MDataChooser fx:id="startDate" layoutX="156.0" layoutY="42.0" minWidth="178.0" prefWidth="178.0" />
+            <Label fx:id="startDateLabel" layoutX="14.0" layoutY="46.0" text="Wybierz datę rozpoczęcia" />
+            <Label fx:id="groupLabel" layoutX="14.0" layoutY="83.0" text="Wybierz grupę" />
+            <Label fx:id="typeLabel" layoutX="14.0" layoutY="115.0" text="Wybierz typ" />
+            <ChoiceBox fx:id="group" layoutX="174.0" layoutY="79.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="type" layoutX="174.0" layoutY="111.0" prefWidth="150.0" />
+            <Label fx:id="cutPriceLabel" layoutX="14.0" layoutY="150.0" text="Podaj zniżkę w procentach" />
+            <TextField fx:id="cutPrice" layoutX="175.0" layoutY="146.0" />
+            <Button fx:id="validity" layoutX="14.0" layoutY="185.0" mnemonicParsing="false" text="Przedłuż ważność" />
+            <Button fx:id="back" layoutX="245.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleBack" text="Nie przedłużaj" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

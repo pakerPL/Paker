@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paker.main.view.MenagePassController">
+   <children>
+      <Pane prefHeight="499.0" prefWidth="800.0">
+         <children>
+            <CheckBox fx:id="checkFilter" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Filtruj" />
+            <Button fx:id="filter" layoutX="189.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Filtruj" />
+            <CheckBox fx:id="activePass" layoutX="354.0" layoutY="14.0" mnemonicParsing="false" text="Pokaż tylko aktywne karnety" />
+            <Button fx:id="createPass" layoutX="575.0" layoutY="13.0" mnemonicParsing="false" prefHeight="93.0" prefWidth="211.0" text="Twórz karnet" />
+            <ComboBox fx:id="chooseGroup" layoutX="11.0" layoutY="76.0" prefWidth="150.0" promptText="Wszystkie" />
+            <ComboBox fx:id="chooseType" layoutX="188.0" layoutY="76.0" prefWidth="150.0" promptText="Wszystkie" />
+            <Label fx:id="chooseGroupLabel" layoutX="14.0" layoutY="59.0" text="Wybierz grupę" />
+            <Label fx:id="chooseTypeLabel" layoutX="188.0" layoutY="59.0" text="Wybierz typ" />
+            <CheckBox fx:id="passNumberNameFilter" layoutX="14.0" layoutY="149.0" mnemonicParsing="false" text="Numer karnetu/Nazwisko" />
+            <TextField fx:id="passNumberName" layoutX="189.0" layoutY="145.0" />
+            <Button fx:id="extend" layoutX="12.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Przedłóż" />
+            <Button fx:id="edit" layoutX="189.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Edytuj" />
+            <Button fx:id="hang" layoutX="354.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Zawieś karnet" />
+            <CheckBox fx:id="onlyHangedPassFilter" layoutX="354.0" layoutY="51.0" mnemonicParsing="false" text="Pokaż tylko zawieszone karnety" />
+            <Button fx:id="delete" layoutX="637.0" layoutY="186.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Usuń karnet" />
+            <ScrollPane layoutX="11.0" layoutY="218.0" prefHeight="223.0" prefWidth="784.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="221.0" prefWidth="779.0">
+                     <children>
+                        <TableView layoutY="14.0" prefHeight="212.0" prefWidth="781.0">
+                          <columns>
+                              <TableColumn prefWidth="60.0" text="Grupa" />
+                            <TableColumn prefWidth="60.0" text="Typ" />
+                            <TableColumn prefWidth="60.0" text="Właściciel" />
+                              <TableColumn prefWidth="60.0" text="Numer karnetu" />
+                              <TableColumn prefWidth="60.0" text="Pierwszy zakup" />
+                              <TableColumn prefWidth="60.0" text="Data wydania" />
+                              <TableColumn prefWidth="60.0" text="data ważności" />
+                              <TableColumn prefWidth="60.0" text="Aktywny" />
+                              <TableColumn prefWidth="60.0" text="Kaucja" />
+                              <TableColumn prefWidth="60.0" text="Pozostałych wejść" />
+                              <TableColumn prefWidth="60.0" text="Cena" />
+                              <TableColumn prefWidth="60.0" text="Zawieszony do" />
+                              <TableColumn prefWidth="60.0" text="Wystawiający" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button fx:id="exit" layoutX="637.0" layoutY="460.0" mnemonicParsing="false" onAction="#hangedExit" prefHeight="25.0" prefWidth="149.0" text="Wyjście" />
+            <Label fx:id="amountRecords" layoutX="14.0" layoutY="464.0" text="Ilość rekordów: " />
+            <Label fx:id="sum" layoutX="173.0" layoutY="464.0" text="Suma:" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

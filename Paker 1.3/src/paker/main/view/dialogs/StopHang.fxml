@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paker.main.view.dialogs.StopHangController">
+   <children>
+      <Pane prefHeight="144.0" prefWidth="275.0">
+         <children>
+            <Label fx:id="messange" layoutX="60.0" layoutY="33.0" lineSpacing="2.0" prefHeight="44.0" prefWidth="166.0" text="Karnet zawieszony do Czy chcesz przerwać zawieszenie?" wrapText="true" />
+            <Button fx:id="stopHang" layoutX="60.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleStopHang" prefHeight="25.0" prefWidth="60.0" text="TAK" />
+            <Button fx:id="back" layoutX="165.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="60.0" text="NIE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
